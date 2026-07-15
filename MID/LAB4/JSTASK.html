@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h2 id="greet">Welcome</h2>
+        <nav>
+            <button class="btn active" data-target="about">About</button>
+            <button class="btn" data-target="projects">Projects</button>
+            <button class="btn" data-target="contact">Contact</button>
+        </nav>
+        <button id="toggle" class="btn">Dark Mode</button>
+    </header>
+
+    <main id="main">
+        <section id="about" class="sec active">
+            <h2>About Me</h2>
+            <p id="about-txt"></p>
+        </section>
+
+        <section id="projects" class="sec">
+            <h2>My Projects</h2>
+        </section>
+
+        <section id="contact" class="sec">
+            <h2>Contact Me</h2>
+            <form id="msg-form" novalidate>
+                <label>Name:</label>
+                <input type="text" id="name" placeholder="Your Name">
+                <span id="name-err" class="err"></span>
+
+                <label>Email:</label>
+                <input type="email" id="email" placeholder="Your Email">
+                <span id="email-err" class="err"></span>
+
+                <label>Message:</label>
+                <textarea id="message" rows="5" placeholder="Your Message"></textarea>
+                <span id="msg-err" class="err"></span>
+
+                <button type="submit" id="sub" class="btn">Send Message</button>
+                <p id="ok-msg"></p>
+            </form>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
